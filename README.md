@@ -4,6 +4,14 @@
   
   > **Modern Vacation Rental & Property Booking Platform built with MongoDB, Express.js, React (Vite), and Node.js featuring Dynamic Overlap Prevention, Real-Time Cost Computation, and Role-Based Access Control.**
 
+  <br/>
+
+  [![Live Web App](https://img.shields.io/badge/🌐_Live_Website-homely--hub--omega.vercel.app-f43f5e?style=for-the-badge&logo=vercel&logoColor=white)](https://homely-hub-omega.vercel.app)
+  [![Backend API](https://img.shields.io/badge/⚙️_Backend_API-Render_Live-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://homelyhub-backend-l32e.onrender.com)
+  [![PDF Report](https://img.shields.io/badge/📄_Project_Report-Download_PDF-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/Shivam95800/HomelyHub/blob/main/HomelyHub_Project_Report.pdf)
+
+  <br/>
+
   [![React](https://img.shields.io/badge/React-18%2B-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
   [![Vite](https://img.shields.io/badge/Vite-5.0%2B-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
   [![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
@@ -15,6 +23,15 @@
   [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 </div>
+
+---
+
+## 🔗 Live Deployment URLs
+
+- 🌐 **Live Web Application:** [https://homely-hub-omega.vercel.app](https://homely-hub-omega.vercel.app)
+- ⚙️ **Backend REST API:** [https://homelyhub-backend-l32e.onrender.com](https://homelyhub-backend-l32e.onrender.com)
+- 🗄️ **Database Cluster:** MongoDB Atlas Cloud
+- 📄 **Project Report PDF:** [HomelyHub_Project_Report.pdf](https://github.com/Shivam95800/HomelyHub/blob/main/HomelyHub_Project_Report.pdf)
 
 ---
 
@@ -157,7 +174,7 @@ HomelyHub/
 │   │   │   ├── Navbar.jsx              # Responsive header with dynamic auth menu
 │   │   │   ├── Footer.jsx              # Reusable footer
 │   │   │   ├── PropertyCard.jsx        # Reusable listing card
-│   │   │   └── ProtectedRoute.jsx      # Route guard for authenticated paths
+│   │   └── ProtectedRoute.jsx      # Route guard for authenticated paths
 │   │   ├── context/
 │   │   │   └── AuthContext.jsx         # Global Auth Context & Hook
 │   │   ├── pages/
@@ -198,6 +215,7 @@ HomelyHub/
 │   └── package.json
 │
 ├── .gitignore                          # Ignored dependencies & secrets
+├── HomelyHub_Project_Report.pdf        # Generated PDF project report
 ├── PROJECT_REPORT.md                   # Formal internship project report
 └── README.md                           # Documentation
 ```
