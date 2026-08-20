@@ -16,27 +16,8 @@ connectDB();
 
 const app = express();
 
-// CORS Configuration for local development and cloud deployment
-const allowedOrigins = [
-  'http://localhost:5173',
-  'http://localhost:3000',
-  process.env.CLIENT_URL,
-].filter(Boolean);
-
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      // Allow requests with no origin (like mobile apps or curl/Postman) or allowed origins
-      if (!origin || allowedOrigins.includes(origin) || allowedOrigins.includes('*')) {
-        callback(null, true);
-      } else {
-        callback(null, true); // Permissive default to avoid CORS friction in varied deployments
-      }
-    },
-    credentials: true,
-  })
-);
-
+// CORS Configuration - Permissive for seamless cross-origin communication
+app.use(cors());
 app.use(express.json());
 
 // API Routes
