@@ -16,7 +16,7 @@ connectDB();
 
 const app = express();
 
-// CORS Configuration - Permissive for seamless cross-origin communication
+// Enable CORS for all origins
 app.use(cors());
 app.use(express.json());
 
@@ -57,9 +57,9 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Port configuration
+// Port configuration - Bind to 0.0.0.0 for cloud containers
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 HomelyHub Server is running on port ${PORT}`);
 });
